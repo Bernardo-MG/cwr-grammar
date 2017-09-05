@@ -138,11 +138,6 @@ acquirer
 * Rows.
 */
 
-row_data
-:
-   WORD NEWLINE
-;
-
 transmission_header
 :
    WORD

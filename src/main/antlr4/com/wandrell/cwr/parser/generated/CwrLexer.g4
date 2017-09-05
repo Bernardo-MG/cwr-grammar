@@ -225,10 +225,6 @@ WORD
    ([A-Z] | [0-9] | [._-] | ' ')+
 ;
 
-NEWLINE:
-   '\n'
-;
-
 // Skippable tokens
 
 WS:
