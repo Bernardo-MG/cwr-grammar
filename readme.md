@@ -14,12 +14,6 @@ ANTRL grammar for CWR (Common Works Registration) files, a standard created by [
 ## Features
 
 - ANTLR4 grammar
-- Model for dice and dice notation, along classes to generate values from them
-- Parser to create model instances from the notation
-
-## Limitations
-
-- Currently only the most basic operations (dice, numbers and additions or subtractions) are supported
 
 ## Documentation
 
@@ -73,12 +67,12 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 The project has been released under version 2.0 of the [Apache License][license].
 
 [cisac]: http://www.cisac.org
-[bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/dice/view
+[bintray-repo]: https://bintray.com/bernardo-mg/maven/cwr-grammar/view
 [maven-repo]: http://mvnrepository.com/artifact/com.wandrell.cwr/cwr-grammar
 [issues]: https://github.com/Bernardo-MG/cwr-grammar/issues
-[javadoc-develop]: http://docs.wandrell.com/development/maven/dice/apidocs
-[javadoc-release]: http://docs.wandrell.com/maven/dice/apidocs
+[javadoc-develop]: http://docs.wandrell.com/development/maven/cwr-grammar/apidocs
+[javadoc-release]: http://docs.wandrell.com/maven/cwr-grammar/apidocs
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [scm]: http://github.com/Bernardo-MG/cwr-grammar
-[site-develop]: http://docs.wandrell.com/development/maven/dice
-[site-release]: http://docs.wandrell.com/maven/dice
+[site-develop]: http://docs.wandrell.com/development/maven/cwr-grammar
+[site-release]: http://docs.wandrell.com/maven/cwr-grammar
