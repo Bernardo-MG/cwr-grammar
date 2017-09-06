@@ -8,9 +8,6 @@ ANTRL grammar for CWR (Common Works Registration) files, a standard created by [
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
 [![Development docs](https://img.shields.io/badge/docs-develop-blue.svg)][site-develop]
 
-[![Release javadocs](https://img.shields.io/badge/javadocs-release-blue.svg)][javadoc-release]
-[![Development javadocs](https://img.shields.io/badge/javadocs-develop-blue.svg)][javadoc-develop]
-
 ## Features
 
 - ANTLR4 grammar
@@ -70,8 +67,6 @@ The project has been released under version 2.0 of the [Apache License][license]
 [bintray-repo]: https://bintray.com/bernardo-mg/maven/cwr-grammar/view
 [maven-repo]: http://mvnrepository.com/artifact/com.wandrell.cwr/cwr-grammar
 [issues]: https://github.com/Bernardo-MG/cwr-grammar/issues
-[javadoc-develop]: http://docs.wandrell.com/development/maven/cwr-grammar/apidocs
-[javadoc-release]: http://docs.wandrell.com/maven/cwr-grammar/apidocs
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [scm]: http://github.com/Bernardo-MG/cwr-grammar
 [site-develop]: http://docs.wandrell.com/development/maven/cwr-grammar
