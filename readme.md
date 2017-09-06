@@ -2,7 +2,7 @@
 
 ANTRL grammar for CWR (Common Works Registration) files, a standard created by [CISAC][cisac] for the registration and revision of musical works, used by publishers and performing rights societies as a way to exchange musical works data.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop/cwr-grammar.svg)][maven-repo]
+[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.cwr/cwr-grammar.svg)][maven-repo]
 [![Bintray](https://api.bintray.com/packages/bernardo-mg/maven/cwr-grammar/images/download.svg)][bintray-repo]
 
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
@@ -74,11 +74,11 @@ The project has been released under version 2.0 of the [Apache License][license]
 
 [cisac]: http://www.cisac.org
 [bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/dice/view
-[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop/dice
-[issues]: https://github.com/Bernardo-MG/dice-notation-java/issues
+[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.cwr/cwr-grammar
+[issues]: https://github.com/Bernardo-MG/cwr-grammar/issues
 [javadoc-develop]: http://docs.wandrell.com/development/maven/dice/apidocs
 [javadoc-release]: http://docs.wandrell.com/maven/dice/apidocs
 [license]: http://www.apache.org/licenses/LICENSE-2.0
-[scm]: http://github.com/Bernardo-MG/dice-notation-java
+[scm]: http://github.com/Bernardo-MG/cwr-grammar
 [site-develop]: http://docs.wandrell.com/development/maven/dice
 [site-release]: http://docs.wandrell.com/maven/dice
