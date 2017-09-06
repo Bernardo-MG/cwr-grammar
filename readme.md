@@ -17,12 +17,10 @@ ANTRL grammar for CWR (Common Works Registration) files, a standard created by [
 Documentation is always generated for the latest release, kept in the 'master' branch:
 
 - The [latest release documentation page][site-release].
-- The [the latest release Javadoc site][javadoc-release].
 
 Documentation is also generated from the latest snapshot, taken from the 'develop' branch:
 
 - The [the latest snapshot documentation page][site-develop].
-- The [the latest snapshot Javadoc site][javadoc-develop].
 
 The documentation site sources come along the source code (as it is a Maven site), so it is always possible to generate them using the following Maven command:
 
