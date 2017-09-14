@@ -120,15 +120,10 @@ controlled_writer_record_information_transaction
 
 territory_recordritory_information_transaction
 :
-   territory_record+ assignor_transaction+ acquirer_transaction+
+   territory_record+ interested_party_of_agreement_transaction+
 ;
 
-assignor_transaction
-:
-   interested_party_of_agreement_record non_roman_alphabet_agreement_party_name_record?
-;
-
-acquirer_transaction
+interested_party_of_agreement_transaction
 :
    interested_party_of_agreement_record non_roman_alphabet_agreement_party_name_record?
 ;
