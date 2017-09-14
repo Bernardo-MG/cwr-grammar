@@ -47,10 +47,10 @@ cwr_file
 
 group_info
 :
-	group_header transaction_info+ group_trailer
+	group_header transaction_group+ group_trailer
 ;
 
-transaction_info
+transaction_group
 :
    agreement_transaction
    | new_work_registration_transaction
