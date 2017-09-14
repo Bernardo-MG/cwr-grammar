@@ -76,12 +76,12 @@ nwr
 
 controlled_publisher_information
 :
-   original_publisher_information administrator_information* subpublisher_information* income_participant_publisher*
+   original_publisher_information administrator_information* subpublisher_information* original_publisher_information*
 ;
 
 original_publisher_information
 :
-   (original_publisher | income_participant_publisher) non_roman_alphabet_publisher_name? publisher_territory_of_control* Publisher_for_Writer+
+   controlled_publisher_info non_roman_alphabet_publisher_name? publisher_territory_of_control* publisher_for_writer+
 ;
 
 instrumentation_information
@@ -106,12 +106,12 @@ information_for_components
 
 administrator_information
 :
-   administrator non_roman_alphabet_publisher_name? publisher_territory_of_control
+   original_publisher_information non_roman_alphabet_publisher_name? publisher_territory_of_control
 ;
 
 subpublisher_information
 :
-   subpublisher non_roman_alphabet_publisher_name? publisher_territory_of_control
+   original_publisher_information non_roman_alphabet_publisher_name? publisher_territory_of_control
 ;
 
 controlled_writer_information
@@ -228,19 +228,14 @@ controlled_publisher_info
    SPU
 ;
 
-income_participant_publisher
-:
-   SPU
-;
-
 publisher_territory_of_control
 :
    SPT
 ;
 
-original_publisher
+publisher_for_writer
 :
-   SPU
+   PWR
 ;
 
 non_roman_alphabet_publisher_name
@@ -291,16 +286,6 @@ non_roman_alphabet_title_for_components
 non_roman_alphabet_other_writer_name
 :
    NOW
-;
-
-administrator
-:
-   SPU
-;
-
-subpublisher
-:
-   SPU
 ;
 
 writer_territory_of_control
