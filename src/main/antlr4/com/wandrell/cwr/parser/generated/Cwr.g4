@@ -52,84 +52,88 @@ group_info
 
 transaction_info
 :
-   agr
-   | nwr
+   agreement_transaction
+   | new_work_registration_transaction
    | revised_registration_record
    | notification_of_iswc_assign_record
-   | ack
+   | acknowledge_transaction
 ;
 
-agr
+/**
+* Transactions.
+*/
+
+agreement_transaction
 :
-   agreement_record territory_recordritory_information+
+   agreement_record territory_recordritory_information_transaction+
 ;
 
-ack
+acknowledge_transaction
 :
    acknowledge_record message_record*
 ;
 
-nwr
+new_work_registration_transaction
 :
-   new_work_registration_record controlled_publisher_info_record* other_publisher_record* controlled_writerritory_record_record_information* other_writerritory_record_record* alterritory_recordnate_title_record* non_roman_alphabet_title_record? information_for_excerpts? information_for_versions? performing_artist_record* performing_artist_in_non_roman_alphabet_record* recording_information_record? work_origin_record? instrumentation_information* information_for_component_records* additional_related_information_record*
+   new_work_registration_record controlled_publisher_info_record* other_publisher_record* controlled_writer_record_information_transaction* other_writer_record* alternate_title_record* non_roman_alphabet_title_record? information_for_excerpts_transaction? information_for_versions_transaction? performing_artist_record* performing_artist_in_non_roman_alphabet_record* recording_information_record? work_origin_record? instrumentation_information_transaction* information_for_component_records_transaction* additional_related_information_record*
 ;
 
-controlled_publisher_info_recordrmation
+controlled_publisher_information_transaction
 :
-   original_publisher_information administrator_information* subpublisher_information* original_publisher_information*
+   original_publisher_information_transaction administrator_information_transaction* subpublisher_information_transaction* original_publisher_information_transaction*
 ;
 
-original_publisher_information
+original_publisher_information_transaction
 :
-   controlled_publisher_info_record non_roman_alphabet_publisher_name_record? publisher_territory_recordritory_of_control_record* publisher_for_writerritory_record_record+
+   controlled_publisher_info_record non_roman_alphabet_publisher_name_record? publisher_territory_of_control_record* publisher_for_writer_record+
 ;
 
-instrumentation_information
+instrumentation_information_transaction
 :
    instrumentation_summary_record instrumentation_detail_record*
 ;
 
-information_for_excerpts
+information_for_excerpts_transaction
 :
-   entire_work_title_for_excerpts_record non_roman_alphabet_title_record_for_excerpts_record? non_roman_alphabet_other_writerritory_record_name_record*
+   entire_work_title_for_excerpts_record non_roman_alphabet_title_record_for_excerpts_record? non_roman_alphabet_other_writer_name_record*
 ;
 
-information_for_versions
+information_for_versions_transaction
 :
-   original_work_title_for_versions_record non_roman_alphabet_original_title_for_versions_record? non_roman_alphabet_other_writerritory_record_name_record*
+   original_work_title_for_versions_record non_roman_alphabet_original_title_for_versions_record? non_roman_alphabet_other_writer_name_record*
 ;
 
-information_for_component_records
+information_for_component_records_transaction
 :
-   component_record non_roman_alphabet_title_for_components_record? non_roman_alphabet_other_writerritory_record_name_record*
+   component_record non_roman_alphabet_title_for_components_record? non_roman_alphabet_other_writer_name_record*
 ;
 
-administrator_information
+administrator_information_transaction
 :
-   original_publisher_information non_roman_alphabet_publisher_name_record? publisher_territory_recordritory_of_control_record
+   original_publisher_information_transaction non_roman_alphabet_publisher_name_record? publisher_territory_of_control_record
 ;
 
-subpublisher_information
+subpublisher_information_transaction
 :
-   original_publisher_information non_roman_alphabet_publisher_name_record? publisher_territory_recordritory_of_control_record
+   original_publisher_information_transaction non_roman_alphabet_publisher_name_record? publisher_territory_of_control_record
 ;
 
-controlled_writerritory_record_record_information
+controlled_writer_record_information_transaction
 :
-   (controlled_writerritory_record_record | income_particinterested_party_of_agreement_recordnt_writerritory_record_record) non_roman_alphabet_writerritory_record_name_record? writerritory_record_territory_recordritory_of_control_record+
+   (controlled_writer_record | controlled_writer_record) non_roman_alphabet_writer_record? writer_territory_of_control_record+
 ;
 
-territory_recordritory_information
+territory_recordritory_information_transaction
 :
-   territory_record+ assignor+ acquirer+
+   territory_record+ assignor_transaction+ acquirer_transaction+
 ;
 
-assignor
+assignor_transaction
 :
    interested_party_of_agreement_record non_roman_alphabet_agreement_party_name_record?
 ;
 
-acquirer
+acquirer_transaction
 :
    interested_party_of_agreement_record non_roman_alphabet_agreement_party_name_record?
 ;
@@ -207,12 +211,12 @@ other_publisher_record
    OPU
 ;
 
-other_writerritory_record_record
+other_writer_record
 :
    OWR
 ;
 
-alterritory_recordnate_title_record
+alternate_title_record
 :
    ALT
 ;
@@ -232,12 +236,12 @@ controlled_publisher_info_record
    SPU
 ;
 
-publisher_territory_recordritory_of_control_record
+publisher_territory_of_control_record
 :
    SPT
 ;
 
-publisher_for_writerritory_record_record
+publisher_for_writer_record
 :
    PWR
 ;
@@ -287,27 +291,22 @@ non_roman_alphabet_title_for_components_record
    NCT
 ;
 
-non_roman_alphabet_other_writerritory_record_name_record
+non_roman_alphabet_other_writer_name_record
 :
    NOW
 ;
 
-writerritory_record_territory_recordritory_of_control_record
+writer_territory_of_control_record
 :
-   WTC
+   SWT
 ;
 
-controlled_writerritory_record_record
-:
-   SWR
-;
-
-income_particinterested_party_of_agreement_recordnt_writerritory_record_record
+controlled_writer_record
 :
    SWR
 ;
 
-non_roman_alphabet_writerritory_record_name_record
+non_roman_alphabet_writer_record
 :
    NWN
 ;
