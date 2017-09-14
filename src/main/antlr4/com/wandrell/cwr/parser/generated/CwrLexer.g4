@@ -96,9 +96,9 @@ IPA
    'IPA' WORD
 ;
 
-ISQ
+ISW
 :
-   'ISQ' WORD
+   'ISW' WORD
 ;
 
 PER

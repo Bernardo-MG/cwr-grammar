@@ -1,1 +1,1 @@
-line 3:0 mismatched input 'GRT000010000017900000719   0000000000' expecting {ACK, AGR, ISQ, NWR, REV}
+line 3:0 mismatched input 'GRT000010000017900000719   0000000000' expecting {ACK, AGR, ISW, NWR, REV}
