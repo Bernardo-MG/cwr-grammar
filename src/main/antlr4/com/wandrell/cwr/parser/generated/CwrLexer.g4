@@ -33,187 +33,187 @@ lexer grammar CwrLexer;
 
 HDR
 :
-   'HDR'
+   'HDR' WORD
 ;
 
 TRL
 :
-   'TRL'
+   'TRL' WORD
 ;
 
 GRH
 :
-   'GRH'
+   'GRH' WORD
 ;
 
 GRT
 :
-   'GRT'
+   'GRT' WORD
 ;
 
 ACK
 :
-   'ACK'
+   'ACK' WORD
 ;
 
 ALT
 :
-   'ALT'
+   'ALT' WORD
 ;
 
 AGR
 :
-   'AGR'
+   'AGR' WORD
 ;
 
 ARI
 :
-   'ARI'
+   'ARI' WORD
 ;
 
 COM
 :
-   'COM'
+   'COM' WORD
 ;
 
 EWT
 :
-   'EWT'
+   'EWT' WORD
 ;
 
 IND
 :
-   'IND'
+   'IND' WORD
 ;
 
 INS
 :
-   'INS'
+   'INS' WORD
 ;
 
 IPA
 :
-   'IPA'
+   'IPA' WORD
 ;
 
 ISQ
 :
-   'ISQ'
+   'ISQ' WORD
 ;
 
 PER
 :
-   'PER'
+   'PER' WORD
 ;
 
 MSG
 :
-   'MSG'
+   'MSG' WORD
 ;
 
 NAT
 :
-   'NAT'
+   'NAT' WORD
 ;
 
 NCT
 :
-   'NCT'
+   'NCT' WORD
 ;
 
 NET
 :
-   'NET'
+   'NET' WORD
 ;
 
 NOW
 :
-   'NOW'
+   'NOW' WORD
 ;
 
 NPA
 :
-   'NPA'
+   'NPA' WORD
 ;
 
 NPN
 :
-   'NPN'
+   'NPN' WORD
 ;
 
 NPR
 :
-   'NPR'
+   'NPR' WORD
 ;
 
 NVT
 :
-   'NVT'
+   'NVT' WORD
 ;
 
 NWN
 :
-   'NWN'
+   'NWN' WORD
 ;
 
 NWR
 :
-   'NWR'
+   'NWR' WORD
 ;
 
 OPU
 :
-   'OPU'
+   'OPU' WORD
 ;
 
 ORN
 :
-   'ORN'
+   'ORN' WORD
 ;
 
 OWR
 :
-   'OWR'
+   'OWR' WORD
 ;
 
 REC
 :
-   'REC'
+   'REC' WORD
 ;
 
 REV
 :
-   'REV'
+   'REV' WORD
 ;
 
 SPT
 :
-   'SPT'
+   'SPT' WORD
 ;
 
 SPU
 :
-   'SPU'
+   'SPU' WORD
 ;
 
 SWR
 :
-   'SWR'
+   'SWR' WORD
 ;
 
 SWT
 :
-   'SWT'
+   'SWT' WORD
 ;
 
 TER
 :
-   'TER'
+   'TER' WORD
 ;
 
 VER
 :
-   'VER'
+   'VER' WORD
 ;
 
 /**

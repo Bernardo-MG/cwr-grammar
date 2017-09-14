@@ -140,210 +140,210 @@ acquirer
 
 transmission_header
 :
-   WORD
+   HDR
 ;
 
 transmission_trailer
 :
-   WORD
+   TRL
 ;
 
 group_header
 :
-   WORD
+   GRH
 ;
 
 group_trailer
 :
-   WORD
+   GRT
 ;
 
 agr_transaction_record
 :
-   WORD
+   AGR
 ;
 
 ack_transaction_record
 :
-   WORD
+   ACK
 ;
 
 msg
 :
-   WORD
+   MSG
 ;
 
 additional_related_information
 :
-   WORD
+   ARI
 ;
 
 performing_artist
 :
-   WORD
+   PER
 ;
 
 performing_artist_in_non_roman_alphabet
 :
-   WORD
+   NPR
 ;
 
 recording_information
 :
-   WORD
+   REC
 ;
 
 work_origin
 :
-   WORD
+   ORN
 ;
 
 other_publisher
 :
-   WORD
+   OPU
 ;
 
 other_writer
 :
-   WORD
+   OWR
 ;
 
 alternate_title
 :
-   WORD
+   ALT
 ;
 
 non_roman_alphabet_title
 :
-   WORD
+   NAT
 ;
 
 nwr_transaction_record
 :
-   WORD
+   NWR
 ;
 
 controlled_publisher_info
 :
-   WORD
+   SPU
 ;
 
 income_participant_publisher
 :
-   WORD
+   SPU
 ;
 
 publisher_territory_of_control
 :
-   WORD
+   SPT
 ;
 
 original_publisher
 :
-   WORD
+   SPU
 ;
 
 non_roman_alphabet_publisher_name
 :
-   WORD
+   NPN
 ;
 
 instrumentation_summary
 :
-   WORD
+   INS
 ;
 
 instrumentation_detail
 :
-   WORD
+   IND
 ;
 
 non_roman_alphabet_title_for_excerpts
 :
-   WORD
+   NET
 ;
 
 entire_work_title_for_excerpts
 :
-   WORD
+   EWT
 ;
 
 original_work_title_for_versions
 :
-   WORD
+   VER
 ;
 
 non_roman_alphabet_original_title_for_versions
 :
-   WORD
+   NVT
 ;
 
 component
 :
-   WORD
+   COM
 ;
 
 non_roman_alphabet_title_for_components
 :
-   WORD
+   NCT
 ;
 
 non_roman_alphabet_other_writer_name
 :
-   WORD
+   NOW
 ;
 
 administrator
 :
-   WORD
+   SPU
 ;
 
 subpublisher
 :
-   WORD
+   SPU
 ;
 
 writer_territory_of_control
 :
-   WORD
+   WTC
 ;
 
 controlled_writer
 :
-   WORD
+   SWR
 ;
 
 income_participant_writer
 :
-   WORD
+   SWR
 ;
 
 non_roman_alphabet_writer_name
 :
-   WORD
+   NWN
 ;
 
 ter
 :
-   WORD
+   TER
 ;
 
 ipa
 :
-   WORD
+   IPA
 ;
 
 npa
 :
-   WORD
+   NPA
 ;
 
 rev
 :
-   WORD
+   REV
 ;
 
 isq
 :
-   WORD
+   ISQ
 ;
