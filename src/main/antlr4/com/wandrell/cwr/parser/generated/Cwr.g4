@@ -42,15 +42,15 @@ parse
  
 cwr_file
 :
-	transmission_header group_info+ transmission_trailer
+	transmission_header cwr_group+ transmission_trailer
 ;
 
-group_info
+cwr_group
 :
-	group_header transaction_group+ group_trailer
+	group_header cwr_transaction+ group_trailer
 ;
 
-transaction_group
+cwr_transaction
 :
    agreement_transaction
    | new_work_registration_transaction
