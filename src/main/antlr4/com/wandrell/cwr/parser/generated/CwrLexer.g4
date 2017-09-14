@@ -176,6 +176,11 @@ OWR
    'OWR' WORD
 ;
 
+PWR
+:
+   'PWR' WORD
+;
+
 REC
 :
    'REC' WORD
