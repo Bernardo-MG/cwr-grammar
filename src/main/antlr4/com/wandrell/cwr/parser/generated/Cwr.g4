@@ -65,7 +65,7 @@ cwr_transaction
 
 agreement_transaction
 :
-   agreement_record territory_recordritory_information_transaction+
+   agreement_record territory_information_transaction+
 ;
 
 acknowledge_transaction
@@ -75,7 +75,7 @@ acknowledge_transaction
 
 new_work_registration_transaction
 :
-   new_work_registration_record controlled_publisher_information_transaction* other_publisher_record* controlled_writer_record_information_transaction* other_writer_record* alternate_title_record* non_roman_alphabet_title_record? information_for_excerpts_transaction? information_for_versions_transaction? performing_artist_record* performing_artist_in_non_roman_alphabet_record* recording_information_record? work_origin_record? instrumentation_information_transaction* information_for_component_records_transaction* additional_related_information_record*
+   new_work_registration_record controlled_publisher_information_transaction* other_publisher_record* controlled_writer_information_transaction* other_writer_record* alternate_title_record* non_roman_alphabet_title_record? information_for_excerpts_transaction? information_for_versions_transaction? performing_artist_record* performing_artist_in_non_roman_alphabet_record* recording_information_record? work_origin_record? instrumentation_information_transaction* information_for_component_transaction* additional_related_information_record*
 ;
 
 controlled_publisher_information_transaction
@@ -98,7 +98,7 @@ information_for_versions_transaction
    original_work_title_for_versions_record non_roman_alphabet_original_title_for_versions_record? non_roman_alphabet_other_writer_name_record*
 ;
 
-information_for_component_records_transaction
+information_for_component_transaction
 :
    component_record non_roman_alphabet_title_for_components_record? non_roman_alphabet_other_writer_name_record*
 ;
@@ -113,14 +113,14 @@ publisher_information_transaction
    original_publisher_information_transaction non_roman_alphabet_publisher_name_record? publisher_territory_of_control_record
 ;
 
-controlled_writer_record_information_transaction
+controlled_writer_information_transaction
 :
-   controlled_writer_record non_roman_alphabet_writer_record? writer_territory_of_control_record+ publisher_for_writer_record+
+   controlled_writer_record non_roman_alphabet_writer_record? writer_territory_of_control_record* publisher_for_writer_record?
 ;
 
-territory_recordritory_information_transaction
+territory_information_transaction
 :
-   territory_record+ interested_party_of_agreement_transaction+
+   territory_record+ interested_party_of_agreement_transaction interested_party_of_agreement_transaction+
 ;
 
 interested_party_of_agreement_transaction
