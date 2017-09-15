@@ -70,7 +70,7 @@ agreement_transaction
 
 acknowledge_transaction
 :
-   acknowledge_record message_record* ( agreement_record | (new_work_registration_transaction work_conflict_transaction?) | (revised_registration_record work_conflict_transaction?) )
+   acknowledge_record message_record* ( agreement_record | (new_work_registration_transaction work_conflict_transaction?) | (revised_registration_transaction work_conflict_transaction?) )
 ;
 
 new_work_registration_transaction
