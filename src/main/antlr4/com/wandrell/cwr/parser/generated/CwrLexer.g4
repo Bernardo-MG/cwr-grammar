@@ -81,6 +81,11 @@ EWT
    'EWT' WORD
 ;
 
+EXC
+:
+   'EXC' WORD
+;
+
 IND
 :
    'IND' WORD

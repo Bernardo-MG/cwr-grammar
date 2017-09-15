@@ -70,7 +70,7 @@ agreement_transaction
 
 acknowledge_transaction
 :
-   acknowledge_record message_record*
+   acknowledge_record message_record* ( agreement_record | (new_work_registration_record work_conflict_record?) | (revised_registration_record work_conflict_record?) )
 ;
 
 new_work_registration_transaction
@@ -219,6 +219,11 @@ non_roman_alphabet_title_record
 new_work_registration_record
 :
    NWR
+;
+
+work_conflict_record
+:
+   EXC
 ;
 
 controlled_publisher_information_record
